@@ -1,0 +1,185 @@
+Un único punto de entrada 
+
+urllaquesea/billetes.php
+
+________________________________________________________________________
+
+Peticion GET (ver vuelos o buscar vuelos)
+
+urllaquesea/billetes.php - VER TODOS
+urllaquesea/billetes.php?fecha=2021/02/02&origen=Madrid&destino=Barcelona
+urllaquesea/billetes.php?fecha=2021/02/02&origen=Madrid
+
+count($_GET);
+
+if(isset($_GET['fecha'])){
+}
+
+
+Si hay vuelos que cumplan los criterios
+
+{
+	estado: true,
+	encontrados: 1,
+	busqueda: {
+		fecha: "2021/02/02"
+		origen: "Madrid"
+		destino: "Barcelona"
+	}
+	vuelos: [
+		{
+			"codigo" : "IB706",
+			"origen" : "MADRID",
+			"destino" : "BARCELONA",
+			"fecha" : "2020-12-17",
+			"hora" : "18:50",
+			"plazas_totales" : 10,
+			"plazas_disponibles" : 8,
+			"precio": 350
+		}			
+	]
+}
+
+Si no hay vuelos que cumplan los criterios
+
+{
+	estado: true,
+	encontrados: 0
+}
+
+Si hay algún error en la petición o no se ha podido realizar la consulta
+
+{
+	estado: false,
+	mensaje: "No se ha podido realizar la consulta por... (a completar)"
+}
+
+________________________________________________________________________
+
+Peticion POST (comprar un billete)
+
+Se envía lo siguiente desde el cliente
+
+{
+	"codigo" : "IB706",
+	"dni" : "44556677H",
+	"apellido" : "Rodriguez",
+    "nombre" : "María",
+    "dniPagador" : "44556677H",
+    "tarjeta" : "038 0025 5553 5553"
+}
+
+Si todo ha ido bien, la respuesta será
+
+{
+	"estado" : true,
+	"codigo" : "IB706",
+	"origen" : "MADRID",
+	"destino" : "BARCELONA",
+	"fecha" : "2020-12-17",
+	"hora" : "18:50",
+    "asiento" : 3,
+    "dni" : "44556677H",
+    "apellido" : "Rodriguez",
+    "nombre" : "María",
+    "dniPagador" : "44556677H",
+    "tarjeta" : "038 0025 5553 5553",
+    "codigoVenta" : "GHJ7766GG",
+	"costeBillete" : 350
+}
+
+Si hay algún error
+
+{
+	estado: false,
+	mensaje: "No se ha podido realizar la compra por ... (a completar)"
+}
+
+_______________________________________________________________________
+
+Petición DELETE - Borrar un billete
+
+{
+	"codigo" : "IB706",
+	"dni" : "44556677H",
+	"codigoVenta" : "GHJ7766GG"
+}
+
+_____________________________________________________________________
+
+Petición PUT - Modificar un billete
+
+{
+	"codigo" : "IB706",
+	"dni" : "44556677H",
+	"codigoVenta" : "GHJ7766GG",
+	"dniNuevo" : "44556677H",
+	"apellido" : "Rodriguez",
+    "nombre" : "María"
+}
+
+________________________________________________________________________
+
+Peticion POST (comprar varios billetes para el mismo vuelo) - Para el 10
+
+Se envía lo siguiente desde el cliente
+
+{
+	"codigo" : "IB706",
+    "dniPagador" : "44556677H",
+    "tarjeta" : "038 0025 5553 5553"	
+	"datosViajeros":[
+		{
+			"dni" : "44556677H",
+			"apellido" : "Rodriguez",
+			"nombre" : "María"
+		},
+		{
+			"dni" : "44558877H",
+			"apellido" : "Rodriguez",
+			"nombre" : "Pedro"
+		}
+	]	
+
+}
+
+Si todo ha ido bien, la respuesta será
+
+{
+	"estado" : true,
+	"codigo" : "IB706",
+	"origen" : "MADRID",
+	"destino" : "BARCELONA",
+	"fecha" : "2020-12-17",
+	"hora" : "18:50",
+	"dniPagador" : "44556677H",
+    "tarjeta" : "038 0025 5553 5553",
+    "codigoVenta" : "GHJ7766GG",
+	"datosBilletes":[
+		{
+			"asiento" : 3,
+			"dni" : "44556677H",
+			"apellido" : "Rodriguez",
+			"nombre" : "María",
+			"costeBillete" : 350			
+		},
+		{
+			"asiento" : 4,
+			"dni" : "44558877H",
+			"apellido" : "Rodriguez",
+			"nombre" : "Pedro",
+			"costeBillete" : 350			
+		}		
+	]	
+}
+
+Si hay algún error
+
+{
+	estado: false,
+	mensaje: "No se ha podido realizar la compra por ... (a completar)"
+}
+
+Si no se puede comprar un billete, no se compra ninguno
+
+

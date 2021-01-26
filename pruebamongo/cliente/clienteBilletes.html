@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+  <title>Cliente Billetes</title>
+  <meta charset="utf-8">   
+  <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  <link rel="stylesheet" type="text/css" href="estilos/modal.css">
+  <script src="js/myScript.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>CLIENTE BILLETES</h1>
+
+    <!-- Inicialmente vacío. Se carga mediante AJAX (llamando a cargaDatos) -->
+    <section class="left">
+      <div>
+       <h2>BÚSQUEDA DE VUELOS</h2>
+       <div id="capaQuery"></div>
+      </div>
+      <div id="contenedor">
+
+      </div>
+    </section>
+
+    <section id="formulario" class="right">
+      <form onsubmit="event.preventDefault();" id="bForm">
+        <h2>Formulario de búsqueda de vuelos</h2>
+        <label>Fecha: </label><input type="date" id="fechaInput" name="fecha" /><br />
+        <label>Origen: </label><input type="text" id="origenInput" name="origen" /><br />
+        <label>Destino: </label><input type="text" id="destinoInput" name="destino" /><br />
+        <br />
+        <button onclick="buscarVuelos()">BUSCAR VUELOS</button><br/>
+        <input type="reset" value="Limpiar formulario"/>
+      </form>
+      <form onsubmit="event.preventDefault();" id="ccmForm">
+        <h2>Formulario de compra, cancelación o modificación</h2>
+        <p>Pendiente visualización de unos campos u otros en función de la acción</p>
+
+        <label>Codigo Vuelo: </label><input type="text" id="codigoVueloInput" name="codigo" /><br />
+        <label>DNI Viajero: </label><input type="text" id="dniVInput" name="dni" /><br />
+        <label>DNI Nuevo: </label><input type="text" id="dniNInput" name="dniNuevo" /><br />
+        <label>DNI Pagador: </label><input type="text" id="dniPInput" name="dniPagador" /><br />
+        <label>Tarjeta: </label><input type="text" id="tarjetaInput" name="tarjeta" /><br />
+        <label>Apellidos: </label><input type="text" id="apellidosInput" name="apellido" /><br />
+        <label>Nombre: </label><input type="text" id="nombreInput" name="nombre" /><br />
+        <label>Código Venta: </label><input type="text" id="codigoVentaInput" name="codigoVenta" /><br />
+        <br />
+        <button onclick="comprarBillete()">COMPRAR BILLETE</button><br/>
+        <button onclick="cancelarBillete()">CANCELAR BILLETE</button><br/>
+        <button onclick="modificarBillete()">MODIFICAR BILLETE</button><br/>        
+        <input type="reset" value="Limpiar formulario"/>
+        
+
+
+      </form>      
+      <br />
+    </section>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header" id="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="h2modal">Modal Header</h2>
+      </div>
+      <div class="modal-body" id="modal-body">
+
+      </div>
+    </div>
+
+  </div>
+
+  </main>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>

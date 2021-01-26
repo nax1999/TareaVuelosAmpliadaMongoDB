@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38514ad6-6776-4052-8b8e-eeb990417961" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/mongodb/mongodb" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1nKdXhgyRUJ9bfv0r3zXMaEv2rf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38514ad6-6776-4052-8b8e-eeb990417961" name="Default Changelist" comment="" />
+      <created>1611142757508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611142757508</updated>
+      <workItem from="1611142759120" duration="11404000" />
+      <workItem from="1611161480015" duration="2480000" />
+      <workItem from="1611245523441" duration="1103000" />
+      <workItem from="1611246664198" duration="6031000" />
+      <workItem from="1611660954504" duration="6502000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="721" y="122" width="1011" height="819" key="#PHP" timestamp="1611159829471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="122" width="1011" height="819" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1611159829471" />
+    <state x="1220" y="286" key="FileChooserDialogImpl" timestamp="1611160440001">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="286" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611160440001" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611663822932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611663822932" />
+    <state x="1136" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1611660959534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1136" y="355" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611660959534" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1611674662521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1611674662521" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-2" timestamp="1611674744880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1611674744880" />
+    <state x="0" y="6" width="930" height="1026" key="dock-window-3" timestamp="1611674913156">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="6" width="930" height="1026" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1611674913156" />
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1611674459549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611674459549" />
+  </component>
+</project>

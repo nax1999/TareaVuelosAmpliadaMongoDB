@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  height: 100%;
+}
+
+h1, h2 {
+  margin: auto;
+  text-align: center;
+  min-height: 5vh;
+  width:100%;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.left, .right{
+  width: 50%;
+  border: 1px solid red;
+
+  padding: 1%;
+}
+
+.left{
+  min-height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+#contenedor{
+  min-height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.right{
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.left h2{
+  width: 100%;
+
+}
+
+.capaVuelo{
+  width: 45%;
+  min-width: 350px;
+  border: solid black 1px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.capaVuelo h3{
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.capaVuelo p{
+  width: 48%;
+}
+
+.capaVuelo p:last-child{
+  width: 100%;
+  text-align: center;
+}
+
+.capaVuelo p span:first-child {
+  text-transform: capitalize;
+}
+
+form{
+  width: 100%;
+}
+
+.mensajeDebug{
+  width: 70%;
+}
+
+.botonEliminar {
+  display: block;
+  position: absolute;
+  right: 5%;
+  cursor:pointer;
+  border: none;
+  color:white;
+}
+
+.botonEliminar:hover{
+  color:orange;
+}
+
